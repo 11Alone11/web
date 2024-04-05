@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Категории</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__nav-link">
+              <svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+                fill="#fff"
+              >
+                <path
+                  d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/index.html" class="header__nav-link">Главная</a>
+              </li>
+              <a href="/products.html" class="header__nav-link">Книги</a>
+              <li class="header__nav-item">
+                <a href="/categories.html" class="header__nav-link"
+                  >Категории</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="/book.html" class="header__nav-link">Книга</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <a href="/index.html" class="burger__link header__nav-link"
+              >Главная</a
+            >
+            <a href="/products.html" class="burger__link header__nav-link"
+              >Книги</a
+            >
+            <a href="/categories.html" class="burger__link header__nav-link"
+              >Категории</a
+            >
+            <a href="book.html" class="burger__link header__nav-link">Книга</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h1 class="title">БЕСТСЕЛЛЕРЫ</h1>
+          <table class="grid-table">
+            <tr>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/1.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title"
+                    >Гарри Поттер и философский камень</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Одиннадцатилетний мальчик-сирота Гарри Поттер живет в семье
+                    своей тетки и даже не подозревает, что он – настоящий
+                    волшебник. Но однажды прилетает сова с письмом для него, и
+                    жизнь Гарри Поттера изменяется навсегда. Он узнает, что
+                    зачислен в Школу Чародейства и Волшебства, выясняет правду о
+                    загадочной смерти своих родителей, а в результате ему
+                    удается раскрыть секрет философского камня. Книга,
+                    покорившая мир, эталон литературы для читателей всех
+                    возрастов, синоним успеха. Книга, сделавшая Джоан Роулинг
+                    самым читаемым писателем современности. Книга, ставшая
+                    культовой уже для нескольких поколений. «Гарри Поттер и
+                    Философский камень» – история начинается.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/2.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title"
+                    >Гарри Поттер и Тайная комната</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    На втором году обучения в школе волшебников Гарри Поттер
+                    откроет в себе связь с Темным Лордом, проникнет вместе с
+                    друзьями в скрытые доселе места Хогвартса, а также узнает,
+                    почему читать чужие дневники может быть опасно.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/3.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title"
+                    >Гарри Поттер и узник Азкабана</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Книга, покорившая мир, эталон литературы для читателей всех
+                    возрастов, синоним успеха. Книга, сделавшая Дж. К. Роулинг
+                    самым читаемым писателем современности. Книга, ставшая
+                    культовой уже для нескольких поколений. "Гарри Поттер и
+                    узник Азкабана" – история продолжается. Для среднего
+                    школьного возраста.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h1 class="title">НОВИНКИ</h1>
+          <table class="grid-table">
+            <tr>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/4.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title">Гарри Поттер и Кубок огня</a>
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Гарри Поттеру предстоит четвертый год обучения в Школе
+                    чародейства и волшебства "Хогвартс". Новые заклинания, новые
+                    зелья, новые учителя, новые предметы... Все это знакомо, и
+                    Гарри с нетерпением ожидает начала учебного года. Но на
+                    школу внезапно обрушивается потрясающая новость: в этом году
+                    в Хогвартсе будет проходить Турнир Трех Волшебников, и
+                    конечно же, каждый хочет принять в нем участие...
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/5.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title"
+                    >Гарри Поттер и Орден Феникса</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Книга, покорившая мир, эталон литературы для читателей всех
+                    возрастов, синоним успеха. Книга, сделавшая Дж. К. Роулинг
+                    самым читаемым писателем современности. Книга, ставшая
+                    культовой уже для нескольких поколений. "Гарри Поттер и
+                    орден Феникса" – история продолжается.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/6.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title"
+                    >Гарри Поттер и Принц-полукровка</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Книга, покорившая мир, эталон литературы, синоним успеха.
+                    Книга, сделавшая Дж. К. Роулинг самым читаемым писателем
+                    современности. Книга, ставшая культовой уже для нескольких
+                    поколений. "Гарри Поттер и Принц-полукровка" – история
+                    продолжается.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <article class="book">
+                  <a href="#">
+                    <img
+                      class="book__img"
+                      src="/images/7.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="#" class="book__title">Гарри Поттер и Дары Смерти</a>
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Гарри Поттера ждет самое страшное испытание в жизни –
+                    смертельная схватка с Волан-де-Мортом. Ждать помощи не от
+                    кого – Гарри одинок как никогда. Друзья и враги Гарри
+                    предстают в совершенно неожиданном свете. Граница между
+                    Добром и Злом становится все призрачнее. В седьмой,
+                    финальной книге Дж. К. Ролинг раскрывает все магические
+                    тайны.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h1 class="title">СТОИТ ПОЧИТАТЬ</h1>
+          <table class="grid-table">
+            <tr>
+              <td>
+                <article class="book">
+                  <a href="/book.html">
+                    <img
+                      class="book__img"
+                      src="/images/8.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="/book.html" class="book__title"
+                    >Фантастические твари и где они обитают. Оригинальный
+                    сценарий</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Дж. К. Роулинг приглашает вас познать новую эру в истории
+                    Волшебного мира... Эта книга ее дебют в качестве сценариста.
+                    Грандиозная приключенческая история о дружбе, волшебстве и
+                    хаосе с вереницей незабываемых персонажей. События
+                    происходят за пятьдесят лет до начала истории о Гарри
+                    Поттере. Исследователь и магизоолог Ньют Саламандер только
+                    что завершил кругосветное путешествие в поисках самых редких
+                    и необычных волшебных существ. Он прибывает в Нью-Йорк с
+                    намерением задержаться там совсем ненадолго. Но его чемодан
+                    перепутали и некоторые из фантастических тварей,
+                    находившихся в нем, сбежали в город, что повлекло за собой
+                    неминуемые проблемы...
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="/book.html">
+                    <img
+                      class="book__img"
+                      src="/images/9.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="/book.html" class="book__title"
+                    >Фантастические твари и где они обитают</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    6 новых фантастических тварей от Дж. К. Роулинг. Издание
+                    проиллюстрировано черно-белыми картинками Томислава Томича.
+                    Книга "Фантастические твари и где они обитают" есть
+                    практически во всех колдовских домах. Кроме того, она –
+                    обязательный учебник в школе колдовства и ведьминских
+                    искусств "Хогварц".
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+              <td>
+                <article class="book">
+                  <a href="/book.html">
+                    <img
+                      class="book__img"
+                      src="/images/10.jpg"
+                      alt="Название книги"
+                  /></a>
+
+                  <a href="/book.html" class="book__title"
+                    >Фантастические твари. Преступления Грин-де-Вальда.
+                    Оригинальный сценарий</a
+                  >
+                  <p class="book__author">Джоан Роулинг</p>
+                  <p class="book__description">
+                    Перед вами оригинальный сценарий, написанный Дж. К. Роулинг
+                    для второго фильма пятисерийной киноэпопеи "Фантастические
+                    твари". События разворачиваются в 1927 году, спустя
+                    несколько месяцев после окончания истории первого фильма.
+                    Действие переносится из Нью-Йорка в Лондон, затем в Париж и,
+                    наконец, в Хогвартс – и открывает совершенно новую,
+                    захватывающую главу о мире магов и волшебников.
+                  </p>
+                  <div class="book__rating">
+                    <div class="book__stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                  <p class="book__price">$20.99</p>
+                </article>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a href="/" class="footer__nav-link"
+              ><svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+                fill="#fff"
+              >
+                <path
+                  d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html" class="header__nav-link">Новинки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="categories.html" class="header__nav-link">Категории</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="book.html" class="header__nav-link">Книги</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer__license">Все права защищены &copy; 2024</p>
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>

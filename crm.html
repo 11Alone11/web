@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>CRM</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__nav-link">
+              <svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+                fill="#fff"
+              >
+                <path
+                  d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/index.html" class="header__nav-link">Главная</a>
+              </li>
+              <a href="/products.html" class="burger__link header__nav-link"
+                >Книги</a
+              >
+              <li class="header__nav-item">
+                <a href="/categories.html" class="header__nav-link"
+                  >Категории</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="/book.html" class="header__nav-link">Книга</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <a href="/index.html" class="burger__link header__nav-link"
+              >Главная</a
+            >
+            <a href="/products.html" class="burger__link header__nav-link"
+              >Книги</a
+            >
+            <a href="/categories.html" class="burger__link header__nav-link"
+              >Категории</a
+            >
+            <a href="book.html" class="burger__link header__nav-link">Книга</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <div class="title">Статьи</div>
+            <form id="article-form">
+              <div class="form-group">
+                <label for="title">Название статьи:</label>
+                <input type="text" id="title" name="title" required />
+              </div>
+              <div class="form-group">
+                <label for="datetime">Дата и время:</label>
+                <input
+                  type="datetime-local"
+                  id="datetime"
+                  value="2024-03-13T12:30"
+                  min="2000-03-13T12:30"
+                  max="9999-03-13T12:30"
+                  name="datetime"
+                  required
+                />
+              </div>
+              <button class="button" type="submit">Сохранить статью</button>
+            </form>
+            <div id="search-and-sort" class="form-group info-slide sorts">
+              <input type="text" id="search-input" placeholder="Поиск..." />
+              <div>
+                <span>От</span>
+                <input type="datetime-local" id="start-datetime" />
+              </div>
+              <div>
+                <span>До</span>
+                <input type="datetime-local" id="end-datetime" />
+              </div>
+              <button class="button" id="sort-button">Сортировать</button>
+            </div>
+            <div class="articles"></div>
+          </div>
+          <div>
+            <div class="title">Книги</div>
+            <form id="book-form" class="info-slide">
+              <div class="form-group">
+                <label for="title">Название книги:</label>
+                <input type="text" id="book-title" name="title" required />
+              </div>
+              <div class="form-group">
+                <label for="author">Автор:</label>
+                <input type="text" id="author" name="author" required />
+              </div>
+              <div class="form-group">
+                <label for="description">Описание:</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="price">Цена:</label>
+                <input
+                  type="number"
+                  id="price"
+                  name="price"
+                  required
+                  min="0"
+                  step="0.01"
+                />
+              </div>
+              <div class="form-group">
+                <label for="image">Изображение:</label>
+                <input type="file" id="image" name="image" />
+              </div>
+
+              <div class="form-group">
+                <label for="rating">Рейтинг:</label>
+                <select id="rating" name="rating">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <input type="hidden" id="book-id" name="id" />
+              <button class="button" type="submit">Добавить книгу</button>
+              <button
+                class="button"
+                type="button"
+                id="update-book"
+                style="display: none"
+              >
+                Обновить книгу
+              </button>
+              <button
+                class="button"
+                type="button"
+                id="delete-book"
+                style="display: none"
+              >
+                Удалить книгу
+              </button>
+            </form>
+
+            <div class="books"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a href="/" class="footer__nav-link"
+              ><svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+                fill="#fff"
+              >
+                <path
+                  d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html" class="header__nav-link">Новинки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="categories.html" class="header__nav-link">Категории</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="book.html" class="header__nav-link">Книги</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer__license">Все права защищены &copy; 2024</p>
+      </div>
+    </footer>
+
+    <script src="/crm.js"></script>
+  </body>
+</html>
